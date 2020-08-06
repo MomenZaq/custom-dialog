@@ -36,12 +36,13 @@
                 android:id="@+id/txv_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_30sdp"
-                android:layout_marginEnd="@dimen/_30sdp"
-                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:textColor="#0E0E0E"
                 android:gravity="center"
+                android:lineSpacingExtra="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp"
-                android:textColor="@color/font_black"
                 android:textSize="@dimen/_13sdp" />
 
             <TextView
@@ -49,13 +50,13 @@
                 android:layout_width="@dimen/_230sdp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:textColor="#8A8A8A"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:gravity="center_horizontal"
-                android:lineSpacingExtra="4.5dp"
+                android:lineSpacingExtra="@dimen/_4sdp"
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
                 android:paddingBottom="20dp"
-                android:textColor="@color/font_gray_accent"
                 android:textScaleX="1.1"
                 android:textSize="@dimen/_10sdp" />
 
@@ -65,13 +66,12 @@
         <Button
             android:id="@+id/btn_ok"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:layout_width="@dimen/_60sdp"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/_40sdp"
             android:gravity="center"
             android:text="@string/save"
-            android:textColor="@color/font"
+            android:textAllCaps="false"
             android:textSize="@dimen/_11sdp"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -79,13 +79,13 @@
         <Button
             android:id="@+id/btn_cancel"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:layout_width="@dimen/_55sdp"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/_40sdp"
             android:gravity="center"
-            android:visibility="gone"
             android:text="@string/cancel"
-            android:textColor="@color/font_gray"
+            android:textAllCaps="false"
             android:textSize="@dimen/_11sdp"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_ok" />
     </androidx.constraintlayout.widget.ConstraintLayout>

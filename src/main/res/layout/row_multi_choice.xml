@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
+        android:lineSpacingExtra="@dimen/_5sdp"
         android:gravity="center"
         android:padding="@dimen/_4sdp"
         android:textSize="@dimen/_12sdp" />
