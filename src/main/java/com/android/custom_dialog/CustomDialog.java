@@ -104,7 +104,7 @@ public class CustomDialog extends DialogFragment {
             txvTitle.setTextColor(ContextCompat.getColor(context, titleColor));
         }
 
-        System.out.println("subTitle: "+subTitle);
+        System.out.println("subTitle: " + subTitle);
         if (subTitle != null && !subTitle.equals("")) {
             txvSubTitle.setVisibility(View.VISIBLE);
             txvSubTitle.setText(subTitle);
