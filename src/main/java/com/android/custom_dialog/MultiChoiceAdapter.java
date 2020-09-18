@@ -27,13 +27,13 @@ public class MultiChoiceAdapter extends RecyclerView.Adapter<MultiChoiceAdapter.
 
     @NonNull
     @Override
-    public MultiChoiceAdapter.OrderHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public OrderHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_multi_choice, parent, false);
-        return new MultiChoiceAdapter.OrderHolder(view);
+        return new OrderHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final MultiChoiceAdapter.OrderHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final OrderHolder holder, final int position) {
         MultiChoiceModel multiChoiceModel = multiChoiceModelList.get(holder.getAdapterPosition());
         holder.txvItem.setText(multiChoiceModel.getText());
         holder.txvItem.setTextColor(ContextCompat.getColor(context,multiChoiceModel.getColor()));
